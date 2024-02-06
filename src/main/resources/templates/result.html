@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -9,7 +9,10 @@
     Generate a new table!
 </h1>
 <main>
+    <table th:each="num : ${tablenum}">
+        <tr th:text="${num}"></tr>
 
+    </table>
 
 
 
@@ -22,7 +25,7 @@
     <form action="/result" th:action="">
         <p>
             <label for="m"></label>
-            <select id ="m" th:name="mulchoice">
+            <select id ="m" th:name="choice">
                 <option th:value="1">1</option>
                 <option th:value="2">2</option>
                 <option th:value="3">3</option>
