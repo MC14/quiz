@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>
+    Generate a new table!
+</h1>
+<main>
+
+
+
+
+
+
+
+</main>
+<footer>
+    <p> Enter a number to mulitply the Table by</p>
+    <form action="/result" th:action="">
+        <p>
+            <label for="m"></label>
+            <select id ="m" th:name="mulchoice">
+                <option th:value="1">1</option>
+                <option th:value="2">2</option>
+                <option th:value="3">3</option>
+                <option th:value="4">4</option>
+                <option th:value="5">5</option>
+                <option th:value="6">6</option>
+                <option th:value="7">7</option>
+                <option th:value="8">8</option>
+                <option th:value="9">9</option>
+            </select>
+            <p>
+                <input type="submit" value="Multiply">
+            </p>
+
+
+
+        </p>
+
+    </form>
+</footer>
+</body>
+</html>
